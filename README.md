@@ -1,2 +1,3 @@
 # threejs-example
-Three.js 示例
+
+> Three 示例，参考：[探索three.js](https://discoverthreejs.com/zh/)

@@ -1,0 +1,38 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./tsc-src",
+    "paths": {
+      "@*": [
+        "src/*"
+      ],
+      "@worlds/*": [
+        "src/worlds/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@systems/*": [
+        "src/systems/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@types": [
+        "src/types/index.ts"
+      ],
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

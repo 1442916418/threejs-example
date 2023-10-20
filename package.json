@@ -1,0 +1,31 @@
+{
+  "name": "threejs-example",
+  "version": "1.0.0",
+  "description": "> Three.js 示例",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1442916418/threejs-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1442916418/threejs-example/issues"
+  },
+  "homepage": "https://github.com/1442916418/threejs-example#readme",
+  "dependencies": {
+    "three": "^0.157.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.157.2",
+    "@types/node": "^20.8.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.5.0"
+  }
+}
