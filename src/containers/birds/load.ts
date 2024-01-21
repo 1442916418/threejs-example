@@ -1,4 +1,4 @@
-import { handleIterateLoaderModel } from '@utils/loader-model'
+import ModelLoader from '@utils/loader-model'
 import { AnimationMixer, Vector3 } from 'three'
 
 import type { TLoaderModel, THandleModelEffect, TLoadAllModels } from '@types'
@@ -34,7 +34,7 @@ export const loadAllModels = (options: TLoadAllModels) => {
 
   return new Promise<boolean>((resolve, reject) => {
     try {
-      handleIterateLoaderModel({
+      ModelLoader.handleIterateLoaderModel({
         list: floorLoadList,
         onAllLoad: () => {
           resolve(true)

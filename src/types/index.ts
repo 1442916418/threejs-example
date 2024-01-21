@@ -72,15 +72,17 @@ export interface TGetNameModel {
 export interface TLoaderModel {
   /** 模型名称 */
   name: string
+  /** 模型简称 */
+  abbr?: string
   /** 模型类型 */
-  type: 'gltf' | 'glb' | 'rgbe'
+  type: 'gltf' | 'glb' | 'rgbe' | 'fbx' | 'hdr'
   /** 模型路径 */
   url: string
   /** 模型解码路径 */
-  dracoUrl: string
-  onLoad: (value1: GLTF, value2?: any) => void
+  dracoUrl?: string
+  onLoad: (...item: any) => void
   onProgress?: (event: ProgressEvent) => void
-  onError?: (event: ErrorEvent) => void
+  onError?: (event: unknown) => void
 }
 
 /**
